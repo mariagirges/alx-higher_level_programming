@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-for x in range(ord('z'), ord('a') - 1, -1):
-    case = "lower" if x % 2 == 0 else "upper"
-    print("{}".format(chr(x).lower() if case == "lower" else chr(x)), end="")
+for char in range(ord('z'), ord('a') - 1, -1):
+    case = "lower" if char % 2 == 0 else "upper"
+    print("{}".format(chr(char).upper() if case == "upper" else chr(char)), end="")
