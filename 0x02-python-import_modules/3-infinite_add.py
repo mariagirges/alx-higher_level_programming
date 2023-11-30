@@ -5,7 +5,7 @@ import sys
 
 
 def add(*args):
-    total = summation(int(arg) for arg in args)
+    total = sum(int(arg) for arg in args)
     print(total)
 
 
