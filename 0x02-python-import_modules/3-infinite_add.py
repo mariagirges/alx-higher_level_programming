@@ -1,7 +1,8 @@
 #!/usr/bin/python3
+import sys
+def add(*args):
+    total = summation(int(arg) for arg in args)
+    print(total)
 if __name__ == "__main__":
-    import sys
-    summation = 0
-    for x in range(len(sys.argv) - 1):
-        summation += int(sys.argv[x + 1])
-    print("{}".format(total))
+    arguments = sys.argv[1:]
+    add(*arguments)
